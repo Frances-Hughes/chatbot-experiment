@@ -2,17 +2,17 @@
 
 $gray-300: #a8a8a8;
 $gray-400: #8a8a8a;
-$primary-400: #375666;
-$primary-500: #0e222c;
-$primary-600: #0b202e;
-$primary-700: #061824;
-$primary-800: #091218;
-$secondary-300: #74c7db;
-$secondary-500: #1a9ab9;
-$secondary-800: #0ab0da;
-$tertiary-50: #f7f3ea;
-$tertiary-100: #ffefc7;
-$quaternary-500: #f88400;
+$primary-lightest: #375666;
+$primary-light: #0e222c;
+$primary-middle: #0b202e;
+$primary-darkerblue: #061824;
+$primary-darkestblue: #091218;
+$secondary-lightblue: #74c7db;
+$secondary-blue: #1a9ab9;
+$secondary-mediumblue: #0ab0da;
+$tertiary-lightest: #f7f3ea;
+$tertiary-medium: #ffefc7;
+$quaternary-darkestshade: #f88400;
 
 html,
 body,
@@ -32,7 +32,7 @@ body,
 }
 
 .servers {
-  background-color: $primary-500;
+  background-color: $primary-light;
 }
 
 .flexbetween {
@@ -48,7 +48,7 @@ body,
 }
 
 .login-page {
-  background-color: $primary-500;
+  background-color: $primary-light;
   height: 100%;
   width: 100%;
   display: flex;
@@ -57,7 +57,7 @@ body,
 }
 
 .login-container {
-  color: $tertiary-50;
+  color: $tertiary-lightest;
 }
 
 .login-actions {
@@ -74,24 +74,24 @@ body,
   border-radius: 5px;
   padding: 0 10px;
   margin: 10px 0;
-  background-color: $primary-600;
-  color: $tertiary-50;
+  background-color: $primary-middle;
+  color: $tertiary-lightest;
 }
 
 .register-change {
   text-decoration: underline;
-  color: $secondary-500;
+  color: $secondary-blue;
 }
 
 .register-change:hover {
   text-decoration: underline;
-  color: $tertiary-100;
+  color: $tertiary-medium;
   cursor: pointer;
 }
 
 /* Chat Styling */
 .ce-chat-engine {
-  color: $tertiary-50 !important;
+  color: $tertiary-lightest !important;
   font-family: "Rubik" !important;
 }
 
@@ -105,7 +105,7 @@ body,
 
 .horizontal-rule {
   margin: 15px 0px !important;
-  border: 0.5px solid $primary-400 !important;
+  border: 0.5px solid $primary-lightest !important;
 }
 
 .list-category {
@@ -125,19 +125,19 @@ body,
 }
 
 .icon {
-  color: $tertiary-50 !important;
+  color: $tertiary-lightest !important;
   width: 25px !important;
   height: 25px !important;
 }
 
-.icon-phone {
-  width: 16px !important;
-  height: 16px !important;
+.phone-icon {
+  width: 24px !important;
+  height: 24px !important;
 }
 
-.icon-chat {
-  width: 22px !important;
-  height: 22px !important;
+.chat-icon {
+  width: 28px !important;
+  height: 28px !important;
 }
 
 .message-form-preview {
@@ -148,7 +148,7 @@ body,
   position: absolute;
   top: 0;
   right: 0;
-  color: $primary-500 !important;
+  color: $primary-light !important;
   width: 15px !important;
   height: 15px !important;
   cursor: pointer;
@@ -167,7 +167,7 @@ body,
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  border: 1px solid $primary-400 !important;
+  border: 1px solid $primary-lightest !important;
   border-radius: 5px !important;
   padding: 5px 15px 5px 20px !important;
   background: none;
@@ -192,7 +192,7 @@ body,
   position: absolute;
   top: 0;
   left: 0;
-  color: $tertiary-50 !important;
+  color: $tertiary-lightest !important;
   z-index: 2 !important;
   width: 100% !important;
 }
@@ -209,19 +209,19 @@ body,
 }
 
 .message-form-icon-airplane {
-  color: $secondary-500 !important;
+  color: $secondary-blue !important;
   width: 25px !important;
   height: 25px !important;
 }
 
 .message-form-icon-clip:hover,
 .message-form-icon-airplane:hover {
-  color: $secondary-800 !important;
+  color: $secondary-mediumblue !important;
   cursor: pointer;
 }
 
 .message-form-icon-clip {
-  color: $primary-400 !important;
+  color: $primary-lightest !important;
   width: 21px !important;
   height: 21px !important;
 }
@@ -235,7 +235,7 @@ body,
 
 .vertical-line {
   height: 18px;
-  border: 0.5px solid $primary-400 !important;
+  border: 0.5px solid $primary-lightest !important;
   display: inline-block;
 }
 
@@ -244,18 +244,18 @@ body,
   overflow-y: hidden !important;
 }
 
-.header-text {
+.text-header {
   margin: 10px 0 !important;
 }
 
 .ce-chat-list-column {
-  background-color: $primary-600 !important;
+  background-color: $primary-middle !important;
   overflow-y: hidden !important;
-  border-right: 1px solid $primary-400 !important;
+  border-right: 1px solid $primary-lightest !important;
 }
 
 .ce-chat-form {
-  background-color: $primary-600 !important;
+  background-color: $primary-middle !important;
 }
 
 .ce-chat-form-title {
@@ -268,13 +268,13 @@ body,
 .ce-chat-form-button {
   border: none !important;
   border-radius: 33px !important;
-  color: $primary-600 !important;
+  color: $primary-middle !important;
   padding: 4px 15px !important;
   top: 15px !important;
 }
 
 .ce-chat-list {
-  background-color: $primary-600 !important;
+  background-color: $primary-middle !important;
 }
 
 .ce-chat-card {
@@ -289,7 +289,7 @@ body,
 
 .ce-chat-card-subtitle {
   bottom: 16px !important;
-  color: $tertiary-100 !important;
+  color: $tertiary-medium !important;
   font-family: "Rubik" !important;
   font-weight: 300 !important;
 }
@@ -302,12 +302,12 @@ body,
 }
 
 .ce-active-chat-card {
-  background-color: $secondary-800 !important;
-  color: $tertiary-100 !important;
+  background-color: $secondary-mediumblue !important;
+  color: $tertiary-medium !important;
 }
 
 .ce-chat-card-unread {
-  background-color: $quaternary-500 !important;
+  background-color: $quaternary-darkestshade !important;
   right: 16px !important;
 }
 
@@ -322,35 +322,35 @@ body,
 }
 
 .ce-chat-feed {
-  background-color: $primary-700 !important;
+  background-color: $primary-darkerblue !important;
 }
 
-.chat-header {
+.chatroom-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 30px !important;
-  border-bottom: 1px solid $primary-400 !important;
+  padding: 12px 28px !important;
+  border-bottom: 1px solid $primary-lightest !important;
 }
 
-.ce-chat-header-title {
+.ce-chatroom-header-title {
   font-family: "Rubik" !important;
   left: 68px !important;
 }
 
-.ce-chat-header-subtitle {
+.ce-chatroom-header-subtitle {
   font-family: "Rubik" !important;
 }
 
-.ce-chat-header {
-  background-color: $primary-700 !important;
-  color: $tertiary-50 !important;
-  border-bottom: 1px solid $primary-400 !important;
+.ce-chatroom-header {
+  background-color: $primary-darkerblue !important;
+  color: $tertiary-lightest !important;
+  border-bottom: 1px solid $primary-lightest !important;
   padding: 10px !important;
 }
 
 .ce-avatar-dot {
-  background-color: $secondary-500 !important;
+  background-color: $secondary-blue !important;
   margin: 5px 0 !important;
 }
 
@@ -360,7 +360,7 @@ body,
 }
 
 #ce-send-message-button {
-  background-color: $secondary-300 !important;
+  background-color: $secondary-lightblue !important;
   padding: 3px 10px !important;
   bottom: 5px !important;
 }
@@ -371,21 +371,21 @@ body,
 }
 
 .ce-message-list {
-  background-color: $primary-800 !important;
+  background-color: $primary-darkestblue !important;
   height: calc((100% - 100px) - 68px) !important;
-  border-bottom: 1px solid $primary-400 !important;
+  border-bottom: 1px solid $primary-lightest !important;
 }
 
 .ce-message-list::-webkit-scrollbar-track {
-  background: $primary-800;
+  background: $primary-darkestblue;
 }
 
 .ce-message-list::-webkit-scrollbar-thumb {
-  background: $primary-800;
+  background: $primary-darkestblue;
 }
 
 .ce-message-list::-webkit-scrollbar-track:hover {
-  background: $primary-800;
+  background: $primary-darkestblue;
 }
 
 .ce-message-list-content {
@@ -401,24 +401,24 @@ body,
 }
 
 .ce-message-form {
-  background-color: $primary-700 !important;
-  border: 1px solid $primary-400 !important;
+  background-color: $primary-darkerblue !important;
+  border: 1px solid $primary-lightest !important;
   border-radius: 5px !important;
   margin: 20px !important;
   width: calc(100% - 40px) !important;
 }
 
 .ce-message-form-input {
-  background-color: $primary-700 !important;
-  color: $tertiary-50 !important;
+  background-color: $primary-darkerblue !important;
+  color: $tertiary-lightest !important;
   font-family: "Rubik" !important;
   border: none !important;
 }
 
 .ce-my-message-body {
   font-family: "Rubik" !important;
-  background-color: $secondary-500 !important;
-  color: $tertiary-50 !important;
+  background-color: $secondary-blue !important;
+  color: $tertiary-lightest !important;
   border-radius: 8px !important;
   font-size: 14px !important;
 }
@@ -426,36 +426,36 @@ body,
 .ce-their-message-body {
   font-family: "Rubik" !important;
   background-color: $gray-300 !important;
-  color: $tertiary-50 !important;
+  color: $tertiary-lightest !important;
   border-radius: 8px !important;
   font-size: 14px !important;
 }
 
 .ce-my-message-timestamp {
-  color: $tertiary-50 !important;
+  color: $tertiary-lightest !important;
   font-family: "Rubik" !important;
 }
 
 .ce-their-message-timestamp {
-  color: $tertiary-50 !important;
+  color: $tertiary-lightest !important;
   font-family: "Rubik" !important;
 }
 
 .ce-their-message-sender-username {
   padding-left: 50px !important;
-  color: $tertiary-50 !important;
+  color: $tertiary-lightest !important;
   font-family: "Rubik" !important;
 }
 
 /* Chat Settings */
 .ce-chat-settings-column {
-  background-color: $primary-500;
-  border-left: 1px solid $primary-400 !important;
+  background-color: $primary-light;
+  border-left: 1px solid $primary-lightest !important;
   overflow-y: hidden !important;
 }
 
 .ce-chat-settings {
-  background-color: $primary-600 !important;
+  background-color: $primary-middle !important;
 }
 
 .ce-chat-avatars {
@@ -468,22 +468,22 @@ body,
 }
 
 .ce-avatar {
-  background-color: $secondary-500 !important;
+  background-color: $secondary-blue !important;
 }
 
 .ce-avatar-status {
-  background-color: $secondary-800 !important;
+  background-color: $secondary-mediumblue !important;
 }
 
 .ce-chat-settings-title {
   font-family: "Rubik" !important;
   padding: 20px 0 0 0 !important;
-  border-top: 1px solid $primary-400 !important;
+  border-top: 1px solid $primary-lightest !important;
 }
 
 .ce-dropdown {
-  color: $tertiary-50 !important;
-  background-color: $primary-600 !important;
+  color: $tertiary-lightest !important;
+  background-color: $primary-middle !important;
   border-top: none !important;
   font-family: "Rubik" !important;
 }
@@ -495,7 +495,7 @@ body,
 .ce-dropdown-label {
   padding: 30px 25px 10px 25px !important;
   color: $gray-400 !important;
-  background-color: $primary-600 !important;
+  background-color: $primary-middle !important;
   font-family: "Rubik" !important;
   font-weight: 300 !important;
   font-size: 14px !important;
@@ -508,26 +508,26 @@ body,
 
 .ce-member-delete-button {
   border-radius: 5px !important;
-  background-color: $primary-800 !important;
-  color: $primary-400 !important;
-  border: 1px solid $primary-400 !important;
+  background-color: $primary-darkestblue !important;
+  color: $primary-lightest !important;
+  border: 1px solid $primary-lightest !important;
   top: 6px !important;
 }
 
 .ce-autocomplete-input {
   margin: 10px 0 !important;
-  background-color: $primary-800 !important;
-  color: $tertiary-50 !important;
+  background-color: $primary-darkestblue !important;
+  color: $tertiary-lightest !important;
   font-family: "Rubik" !important;
-  border: 1px solid $primary-400 !important;
+  border: 1px solid $primary-lightest !important;
   border-radius: 5px !important;
 }
 
 .ce-danger-button {
   border-radius: 5px !important;
-  background-color: $primary-800 !important;
-  color: $primary-400 !important;
-  border: 1px solid $primary-400 !important;
+  background-color: $primary-darkestblue !important;
+  color: $primary-lightest !important;
+  border: 1px solid $primary-lightest !important;
 }
 
 #ce-settings-photos-dropdown .ce-dropdown-children {
@@ -540,13 +540,13 @@ body,
 }
 
 ::-webkit-scrollbar-track {
-  background: $primary-700;
+  background: $primary-darkerblue;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $primary-700;
+  background: $primary-darkerblue;
 }
 
 ::-webkit-scrollbar-track:hover {
-  background: $primary-700;
+  background: $primary-darkerblue;
 }

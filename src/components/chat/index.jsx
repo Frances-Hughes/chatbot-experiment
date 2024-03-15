@@ -1,11 +1,35 @@
 import React from "react";
 
-const index = () => {
+import {
+  useMultiChatLogic,
+  MultiChatSocket,
+  MultiChatWindow,
+} from "react-chat-engine-advanced";
+useMultiChatLogic;
+
+import Header from "@/components/CustomHeader";
+import StandardMessageForm from "@/components/CustomMessageForms/StandardMessageForm";
+
+const Chat = () => {
+  const chatProps = useMultiChatLogic(
+    import.meta.env.VITE_PROJECT_ID,
+    "testuser",
+    "1234"
+  );
+
   return (
-    <div>
-      <h2>TESTING TESTING 123</h2>
+    <div style={{ flexBasis: "100%" }}>
+      <MultiChatSocket {...chatProps} />
+      <MultiChatWindow
+        {...chatProps}
+        style={{ height: "100vh" }}
+        renderChatHeader={(chat) => <Header chat={chat} />}
+        renderMessageForm={(props) => {
+          return <StandardMessageForm {...props} activeChat={chatProps.chat} />;
+        }}
+      />
     </div>
   );
 };
 
-export default index;
+export default Chat;

@@ -208,14 +208,14 @@ body,
   z-index: 1;
 }
 
-.message-form-icon-airplane {
+.icon-airplane {
   color: $secondary-blue !important;
   width: 25px !important;
   height: 25px !important;
 }
 
 .message-form-icon-clip:hover,
-.message-form-icon-airplane:hover {
+.icon-airplane:hover {
   color: $secondary-mediumblue !important;
   cursor: pointer;
 }

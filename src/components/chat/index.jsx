@@ -2,8 +2,8 @@ import React from "react";
 
 import {
   useMultiChatLogic,
-  MultiChatSocket,
   MultiChatWindow,
+  MultiChatSocket,
 } from "react-chat-engine-advanced";
 useMultiChatLogic;
 
@@ -25,7 +25,9 @@ const Chat = () => {
         style={{ height: "100vh" }}
         renderChatHeader={(chat) => <Header chat={chat} />}
         renderMessageForm={(props) => {
-          return <StandardMessageForm {...props} activeChat={chatProps.chat} />;
+          return (
+            <StandardMessageForm props={props} activeChat={chatProps.chat} />
+          );
         }}
       />
     </div>

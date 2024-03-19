@@ -1,25 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap");
 
-$gray-300: #a8a8a8;
-$gray-400: #8a8a8a;
-$primary-lightest: #375666;
-$primary-light: #0e222c;
-$primary-middle: #0b202e;
-$primary-darkerblue: #061824;
-$primary-darkestblue: #091218;
-$secondary-lightblue: #74c7db;
-$secondary-blue: #1a9ab9;
-$secondary-mediumblue: #0ab0da;
-$tertiary-50: #f7f3ea;
-$tertiary-100: #ffefc7;
-$quaternary-500: #f88400;
+$gray-300: #a3a3a3;
+$gray-400: #858585;
+$primary-400: #35596c;
+$primary-500: #0f2936;
+$primary-600: #091d2b;
+$primary-700: #051926;
+$primary-800: #060f14;
+$secondary-300: #7ac5d7;
+$secondary-500: #219ebc;
+$secondary-800: #00b5e0;
+$tertiary-50: #fff8e6;
+$tertiary-100: #fff1cd;
+$quaternary-500: #fb8500;
 
 html,
 body,
 #root,
 .app {
-  width: 100%;
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
 
@@ -27,19 +27,19 @@ body,
 }
 
 .layout {
-  display: flex;
   width: 100%;
+  display: flex;
 }
 
 .servers {
-  background-color: $primary-light;
+  background-color: $primary-500;
 }
 
 .flexbetween {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 .dropzone {
@@ -48,7 +48,7 @@ body,
 }
 
 .login-page {
-  background-color: $primary-light;
+  background-color: $primary-500;
   height: 100%;
   width: 100%;
   display: flex;
@@ -74,13 +74,13 @@ body,
   border-radius: 5px;
   padding: 0 10px;
   margin: 10px 0;
-  background-color: $primary-middle;
+  background-color: $primary-600;
   color: $tertiary-50;
 }
 
 .register-change {
   text-decoration: underline;
-  color: $secondary-blue;
+  color: $secondary-500;
 }
 
 .register-change:hover {
@@ -105,7 +105,7 @@ body,
 
 .horizontal-rule {
   margin: 15px 0px !important;
-  border: 0.5px solid $primary-lightest !important;
+  border: 0.5px solid $primary-400 !important;
 }
 
 .list-category {
@@ -130,14 +130,14 @@ body,
   height: 25px !important;
 }
 
-.phone-icon {
-  width: 24px !important;
-  height: 24px !important;
+.icon-phone {
+  width: 16px !important;
+  height: 16px !important;
 }
 
-.chat-icon {
-  width: 28px !important;
-  height: 28px !important;
+.icon-chat {
+  width: 22px !important;
+  height: 22px !important;
 }
 
 .message-form-preview {
@@ -148,7 +148,7 @@ body,
   position: absolute;
   top: 0;
   right: 0;
-  color: $primary-light !important;
+  color: $primary-500 !important;
   width: 15px !important;
   height: 15px !important;
   cursor: pointer;
@@ -167,7 +167,7 @@ body,
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  border: 1px solid $primary-lightest !important;
+  border: 1px solid $primary-400 !important;
   border-radius: 5px !important;
   padding: 5px 15px 5px 20px !important;
   background: none;
@@ -208,20 +208,20 @@ body,
   z-index: 1;
 }
 
-.icon-airplane {
-  color: $secondary-blue !important;
+.message-form-icon-airplane {
+  color: $secondary-500 !important;
   width: 25px !important;
   height: 25px !important;
 }
 
 .message-form-icon-clip:hover,
-.icon-airplane:hover {
-  color: $secondary-mediumblue !important;
+.message-form-icon-airplane:hover {
+  color: $secondary-800 !important;
   cursor: pointer;
 }
 
 .message-form-icon-clip {
-  color: $primary-lightest !important;
+  color: $primary-400 !important;
   width: 21px !important;
   height: 21px !important;
 }
@@ -235,7 +235,7 @@ body,
 
 .vertical-line {
   height: 18px;
-  border: 0.5px solid $primary-lightest !important;
+  border: 0.5px solid $primary-400 !important;
   display: inline-block;
 }
 
@@ -244,18 +244,18 @@ body,
   overflow-y: hidden !important;
 }
 
-.text-header {
+.header-text {
   margin: 10px 0 !important;
 }
 
 .ce-chat-list-column {
-  background-color: $primary-middle !important;
+  background-color: $primary-600 !important;
   overflow-y: hidden !important;
-  border-right: 1px solid $primary-lightest !important;
+  border-right: 1px solid $primary-400 !important;
 }
 
 .ce-chat-form {
-  background-color: $primary-middle !important;
+  background-color: $primary-600 !important;
 }
 
 .ce-chat-form-title {
@@ -268,13 +268,13 @@ body,
 .ce-chat-form-button {
   border: none !important;
   border-radius: 33px !important;
-  color: $primary-middle !important;
+  color: $primary-600 !important;
   padding: 4px 15px !important;
   top: 15px !important;
 }
 
 .ce-chat-list {
-  background-color: $primary-middle !important;
+  background-color: $primary-600 !important;
 }
 
 .ce-chat-card {
@@ -302,7 +302,7 @@ body,
 }
 
 .ce-active-chat-card {
-  background-color: $secondary-mediumblue !important;
+  background-color: $secondary-800 !important;
   color: $tertiary-100 !important;
 }
 
@@ -322,35 +322,35 @@ body,
 }
 
 .ce-chat-feed {
-  background-color: $primary-darkerblue !important;
+  background-color: $primary-700 !important;
 }
 
-.chatroom-header {
+.chat-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 28px !important;
-  border-bottom: 1px solid $primary-lightest !important;
+  padding: 10px 30px !important;
+  border-bottom: 1px solid $primary-400 !important;
 }
 
-.ce-chatroom-header-title {
+.ce-chat-header-title {
   font-family: "Rubik" !important;
   left: 68px !important;
 }
 
-.ce-chatroom-header-subtitle {
+.ce-chat-header-subtitle {
   font-family: "Rubik" !important;
 }
 
-.ce-chatroom-header {
-  background-color: $primary-darkerblue !important;
+.ce-chat-header {
+  background-color: $primary-700 !important;
   color: $tertiary-50 !important;
-  border-bottom: 1px solid $primary-lightest !important;
+  border-bottom: 1px solid $primary-400 !important;
   padding: 10px !important;
 }
 
 .ce-avatar-dot {
-  background-color: $secondary-blue !important;
+  background-color: $secondary-500 !important;
   margin: 5px 0 !important;
 }
 
@@ -360,7 +360,7 @@ body,
 }
 
 #ce-send-message-button {
-  background-color: $secondary-lightblue !important;
+  background-color: $secondary-300 !important;
   padding: 3px 10px !important;
   bottom: 5px !important;
 }
@@ -371,21 +371,21 @@ body,
 }
 
 .ce-message-list {
-  background-color: $primary-darkestblue !important;
+  background-color: $primary-800 !important;
   height: calc((100% - 100px) - 68px) !important;
-  border-bottom: 1px solid $primary-lightest !important;
+  border-bottom: 1px solid $primary-400 !important;
 }
 
 .ce-message-list::-webkit-scrollbar-track {
-  background: $primary-darkestblue;
+  background: $primary-800;
 }
 
 .ce-message-list::-webkit-scrollbar-thumb {
-  background: $primary-darkestblue;
+  background: $primary-800;
 }
 
 .ce-message-list::-webkit-scrollbar-track:hover {
-  background: $primary-darkestblue;
+  background: $primary-800;
 }
 
 .ce-message-list-content {
@@ -401,15 +401,15 @@ body,
 }
 
 .ce-message-form {
-  background-color: $primary-darkerblue !important;
-  border: 1px solid $primary-lightest !important;
+  background-color: $primary-700 !important;
+  border: 1px solid $primary-400 !important;
   border-radius: 5px !important;
   margin: 20px !important;
   width: calc(100% - 40px) !important;
 }
 
 .ce-message-form-input {
-  background-color: $primary-darkerblue !important;
+  background-color: $primary-700 !important;
   color: $tertiary-50 !important;
   font-family: "Rubik" !important;
   border: none !important;
@@ -417,7 +417,7 @@ body,
 
 .ce-my-message-body {
   font-family: "Rubik" !important;
-  background-color: $secondary-blue !important;
+  background-color: $secondary-500 !important;
   color: $tertiary-50 !important;
   border-radius: 8px !important;
   font-size: 14px !important;
@@ -449,13 +449,13 @@ body,
 
 /* Chat Settings */
 .ce-chat-settings-column {
-  background-color: $primary-light;
-  border-left: 1px solid $primary-lightest !important;
+  background-color: $primary-500;
+  border-left: 1px solid $primary-400 !important;
   overflow-y: hidden !important;
 }
 
 .ce-chat-settings {
-  background-color: $primary-middle !important;
+  background-color: $primary-600 !important;
 }
 
 .ce-chat-avatars {
@@ -468,22 +468,22 @@ body,
 }
 
 .ce-avatar {
-  background-color: $secondary-blue !important;
+  background-color: $secondary-500 !important;
 }
 
 .ce-avatar-status {
-  background-color: $secondary-mediumblue !important;
+  background-color: $secondary-800 !important;
 }
 
 .ce-chat-settings-title {
   font-family: "Rubik" !important;
   padding: 20px 0 0 0 !important;
-  border-top: 1px solid $primary-lightest !important;
+  border-top: 1px solid $primary-400 !important;
 }
 
 .ce-dropdown {
   color: $tertiary-50 !important;
-  background-color: $primary-middle !important;
+  background-color: $primary-600 !important;
   border-top: none !important;
   font-family: "Rubik" !important;
 }
@@ -495,7 +495,7 @@ body,
 .ce-dropdown-label {
   padding: 30px 25px 10px 25px !important;
   color: $gray-400 !important;
-  background-color: $primary-middle !important;
+  background-color: $primary-600 !important;
   font-family: "Rubik" !important;
   font-weight: 300 !important;
   font-size: 14px !important;
@@ -508,26 +508,26 @@ body,
 
 .ce-member-delete-button {
   border-radius: 5px !important;
-  background-color: $primary-darkestblue !important;
-  color: $primary-lightest !important;
-  border: 1px solid $primary-lightest !important;
+  background-color: $primary-800 !important;
+  color: $primary-400 !important;
+  border: 1px solid $primary-400 !important;
   top: 6px !important;
 }
 
 .ce-autocomplete-input {
   margin: 10px 0 !important;
-  background-color: $primary-darkestblue !important;
+  background-color: $primary-800 !important;
   color: $tertiary-50 !important;
   font-family: "Rubik" !important;
-  border: 1px solid $primary-lightest !important;
+  border: 1px solid $primary-400 !important;
   border-radius: 5px !important;
 }
 
 .ce-danger-button {
   border-radius: 5px !important;
-  background-color: $primary-darkestblue !important;
-  color: $primary-lightest !important;
-  border: 1px solid $primary-lightest !important;
+  background-color: $primary-800 !important;
+  color: $primary-400 !important;
+  border: 1px solid $primary-400 !important;
 }
 
 #ce-settings-photos-dropdown .ce-dropdown-children {
@@ -540,13 +540,13 @@ body,
 }
 
 ::-webkit-scrollbar-track {
-  background: $primary-darkerblue;
+  background: $primary-700;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $primary-darkerblue;
+  background: $primary-700;
 }
 
 ::-webkit-scrollbar-track:hover {
-  background: $primary-darkerblue;
+  background: $primary-700;
 }

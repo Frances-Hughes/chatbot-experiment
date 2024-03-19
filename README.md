@@ -1,8 +1,7 @@
-# React + Vite
+# chat-app
+Build a Chat App with NEW ChatGPT API | Full stack, React, Redux Toolkit, Node, OpenAI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Video: https://www.youtube.com/watch?v=ffEDkqfIzxM
 
-Currently, two official plugins are available:
+For all related questions and discussions about this project, check out the discord: https://discord.gg/2FfPeEk2mX
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

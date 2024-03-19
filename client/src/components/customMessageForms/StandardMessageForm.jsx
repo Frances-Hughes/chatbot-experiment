@@ -1,5 +1,3 @@
-//LOOKS CORRECT CHECKED ALREADY
-
 import React, { useState } from "react";
 import MessageFormUI from "./MessageFormUI";
 

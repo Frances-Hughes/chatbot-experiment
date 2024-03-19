@@ -1,9 +1,9 @@
-import React, { useState } from "react";
 import {
-  PaperClipIcon,
   PaperAirplaneIcon,
+  PaperClipIcon,
   XMarkIcon,
 } from "@heroicons/react/24/solid";
+import React, { useState } from "react";
 import Dropzone from "react-dropzone";
 
 const MessageFormUI = ({
@@ -11,6 +11,8 @@ const MessageFormUI = ({
   message,
   handleChange,
   handleSubmit,
+  appendText,
+  handleKeyDown,
 }) => {
   const [preview, setPreview] = useState("");
 
@@ -19,7 +21,7 @@ const MessageFormUI = ({
       {preview && (
         <div className="message-form-preview">
           <img
-            alt="Message Preview"
+            alt="message-form-preview"
             className="message-form-preview-image"
             src={preview}
             onLoad={() => URL.revokeObjectURL(preview)}
@@ -40,12 +42,21 @@ const MessageFormUI = ({
             type="text"
             value={message}
             onChange={handleChange}
+            onKeyDown={handleKeyDown}
             placeholder="Send a message..."
           />
+          {appendText && (
+            <input
+              className="message-form-assist"
+              type="text"
+              disabled="disabled"
+              value={`${message} ${appendText}`}
+            />
+          )}
         </div>
         <div className="message-form-icons">
           <Dropzone
-            acceptedFiles=".jpg, .jpeg, .png"
+            acceptedFiles=".jpg,.jpeg,.png"
             multiple={false}
             noClick={true}
             onDrop={(acceptedFiles) => {
@@ -63,9 +74,10 @@ const MessageFormUI = ({
               </div>
             )}
           </Dropzone>
-          <hr className="vertical-line" key="vertical-line" />
+
+          <hr className="vertical-line" />
           <PaperAirplaneIcon
-            className="icon-airplane"
+            className="message-form-icon-airplane"
             onClick={() => {
               setPreview("");
               handleSubmit();

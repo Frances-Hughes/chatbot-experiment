@@ -1,12 +1,12 @@
+// CORRECT
 import React from "react";
+import AI from "@/components/CustomMessageForms/AI";
 
 import {
   useMultiChatLogic,
   MultiChatWindow,
   MultiChatSocket,
 } from "react-chat-engine-advanced";
-useMultiChatLogic;
-
 import Header from "@/components/CustomHeader";
 import StandardMessageForm from "@/components/CustomMessageForms/StandardMessageForm";
 
@@ -25,6 +25,9 @@ const Chat = () => {
         style={{ height: "100vh" }}
         renderChatHeader={(chat) => <Header chat={chat} />}
         renderMessageForm={(props) => {
+          if (chatProps.chat?.title.startsWith("AiChat_")) {
+            return <AI props={props} activeChat={chatProps.chat} />;
+          }
           return (
             <StandardMessageForm props={props} activeChat={chatProps.chat} />
           );
